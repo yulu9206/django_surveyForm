@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="/submit" method="post" style="width: 500px; font-size:15px">
+		{% csrf_token %}
+		Your Name:<input type="text" name="name"><br>
+		Dojo Location: 
+		<select name='location'>
+			<option>Mountain View</option>
+			<option>San Jose</option>
+		</select><br>
+		Favourite Language:
+		<select name='language'>
+			<option>JavaScript</option>
+			<option>Python</option>
+		</select><br>
+		Comment(optional):<br>
+		<textarea name='comment'>
+			
+		</textarea><br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
